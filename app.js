@@ -7,5 +7,5 @@ app.listen(process.env.PORT || 3000);
 
 function handler (req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Was travis here?');
+  res.end('Travis was (probably) here.');
 }

@@ -1,12 +1,15 @@
 {
   "name": "buildfirst-ci-by-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/buildfirst/ci-by-example",
   "author": {
     "name": "Nicolas Bevacqua",
     "email": "buildfirst@bevacqua.io",
     "url": "http://bevacqua.io/buildfirst"
   },
+  "engines": {
+    "node": "4.2.1"
+  }
   "keywords": [
     "buildfirst"
   ],
