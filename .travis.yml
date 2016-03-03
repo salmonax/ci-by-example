@@ -1,10 +1,14 @@
 language: node_js
-
 node_js:
-  - "0.10"
-
+- '0.10'
 before_install:
-  - npm install -g grunt-cli
-
+- npm install -g grunt-cli
 script:
-  - grunt ci --verbose --stack
+- grunt ci --verbose --stack
+deploy:
+  provider: heroku
+  api_key:
+    secure: WOCoHsIEByCeTRe6mBs6Y1EXj/dzQy2ykPD1tVmJJ4EYwdkrAsoHtLRkAOWbjIcEoHKKhh/383gHWKPG/4tH3Qkw1L9S4EQemV+UgsaTEMxUv4KWWLLW1A13JIdF2zFJX91h8fwfnwcL40XNlIVLwFvy7maz1NcNIVioqvM6ArGV03S4JIW5Fc3DX1YumXBvpsTVXWBpK1zvKdzaydwL2gt9HNeictExF8TkkmdoTsDBPWW1SYFAMpjeAovJsPHhm716B2jAY+UriPl0tH5RzKRZhqctA8wEC+NryShDy+lMN/FlZbG/FYp+uDJ1Ai3LNUBFkZmPSoDZdfFKwTcvc1iWvrRBu6si9eyeg/ni9nPuRQCgO/SylJQd8B95ViAHkpj0xQ2S9sRnwbnwkbdUltKmNZFh0Tt2uhXqN9Od21pWpjWQR1hSiUs7agk693oU1kS9suomOCN0D0+BK1MvRD9fIAhd+HyfCWG3VWHjammSJEk94nWWjU7faVCwUq9pvBL9m9KpdYUx/KmbcG6mKJlH9vtI9S8dyJR628Df1qkGzyuU/40gA5C8RROKzOWzQlr+F/VAkVxATmoz2Y11maCv9DPiIuobvW6J8ng7WxUpGWnN53Y4yFatpyQjtWk//f3atFWM2PdSuHmVm6m+9m5EWHbt6VFA1fdoGHH4tsM=
+  app: tutorous-staging
+  on:
+    repo: salmonax/ci-by-example
